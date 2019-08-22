@@ -1,11 +1,10 @@
-def square_array(array)
-   array =[]
-  squared_array = []
-  array.each do |num|
-    square = num ** 2
-    square_array << square
-    
-  squared_array
-end
 
+def square_array(array)
+  squared = []
+  count = 0
+  while count < array.size do
+    squared << (array[count] ** 2)
+    count = count + 1
+  end
+  squared
 end
